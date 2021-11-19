@@ -1,0 +1,27 @@
+import Vue from 'vue'
+import Vuex from 'vuex'
+import Glasses from '/src/assets/img/home/glasses/glasses.png'
+import Glasses1 from '/src/assets/img/home/glasses/glasses(1).png'
+import Glasses2 from '/src/assets/img/home/glasses/glasses(2).png'
+import Glasses3 from '/src/assets/img/home/glasses/glasses(3).png'
+import Glasses4 from '/src/assets/img/home/glasses/glasses(4).png'
+import Glasses5 from '/src/assets/img/home/glasses/glasses(5).png'
+import Glasses6 from '/src/assets/img/home/glasses/glasses(6).png'
+import Glasses7 from '/src/assets/img/home/glasses/glasses(7).png'
+import Glasses8 from '/src/assets/img/home/glasses/glasses(8).png'
+import Glasses9 from '/src/assets/img/home/glasses/glasses(9).png'
+import Glasses10 from '/src/assets/img/home/glasses/glasses(10).png'
+import Glasses11 from '/src/assets/img/home/glasses/glasses(11).png'
+import Glasses12 from '/src/assets/img/home/glasses/glasses(12).png'
+import Glasses13 from '/src/assets/img/home/glasses/glasses(13).png'
+import Glasses14 from '/src/assets/img/home/glasses/glasses(14).png'
+import Glasses15 from '/src/assets/img/home/glasses/glasses(15).png'
+import Glasses16 from '/src/assets/img/home/glasses/glasses(16).png'
+import Glasses17 from '/src/assets/img/home/glasses/glasses(17).png'
+import Glasses18 from '/src/assets/img/home/glasses/glasses(18).png'
+import Glasses19 from '/src/assets/img/home/glasses/glasses(19).png'
+import Glasses20 from '/src/assets/img/home/glasses/glasses(20).png'
+
+export default {
+    Glasses, Glasses1, Glasses2, Glasses3, Glasses4, Glasses5, Glasses6, Glasses7, Glasses8, Glasses9, Glasses10, Glasses11, Glasses12, Glasses13, Glasses14, Glasses15, Glasses16, Glasses17, Glasses18, Glasses19, Glasses20
+}
