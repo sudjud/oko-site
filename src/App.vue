@@ -1,9 +1,14 @@
 <template>
   <div id="app">
+    <div style="position: absolute;">{{ width }}
+    {{ height }}</div> 
     <Navmenu />
     <Hamburger />
     <div id="page-wrap">
       <router-view></router-view>
+    </div>
+    <div class="container">
+      <Footer />
     </div>
   </div>
 </template>
@@ -13,56 +18,52 @@
 </style>
 
 <script>;
-import Navmenu from './components/Navmenu'
-import Hamburger from './components/Hamburger'
+import Navmenu from './components/Navs/Navmenu.vue'
+import Hamburger from './components/Hamburger.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   components:{
     Navmenu,
-    Hamburger
+    Hamburger,
+    Footer
   },
   data(){
     return{
       width: window.innerWidth,
+      height: window.innerHeight
     }
   },
   methods:{
     updateWidth(){
       this.width = window.innerWidth;
     },
+    updateHeight(){
+      this.height = window.innerHeight;
+    },
   },
   created(){
-    window.addEventListener('resize', this.updateWidth)
+    window.addEventListener('resize', this.updateWidth),
+    window.addEventListener('resize', this.updateHeight)
   }
 }
 </script>
 
 <style lang="sass">
 
-  .home
-    z-index: 0
 
-  body
-    margin: 0
-    box-sizing: border-box
-    font-family: 'Rubik'
-    font-weight: 400
-    img
-      width: 100%
-  .container
-    width: 1140px
-    margin: 0 auto
-    max-width: calc(100% - 80px)
   
   .hamburger
     display: none
-  
+
   @media (max-width: 980px)
     .navmenu
       display: none
     .hamburger
       display: block
       position: sticky
+      top: 0
+      z-index: 3
 
   
   

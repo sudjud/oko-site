@@ -17,7 +17,7 @@ export default new Vuex.Store({
       },
       {
         id: 1,
-        strength: 15,
+        strength: 10,
         relSpeed: -0.2,
         top:"12px",
         left:"25.6%",
@@ -33,7 +33,7 @@ export default new Vuex.Store({
       },
       {
         id: 3,
-        strength: 15,
+        strength: 10,
         relSpeed: -0.2,
         top:"12px",
         left:"36.8%",
@@ -49,7 +49,7 @@ export default new Vuex.Store({
       },
       {
         id: 5,
-        strength: 15,
+        strength: 10,
         relSpeed: -0.2,
         top:"12px",
         left:"48%",
@@ -65,7 +65,7 @@ export default new Vuex.Store({
       },
       {
         id: 7,
-        strength: 15,
+        strength: 10,
         relSpeed: -0.2,
         top:"12px",
         left:"59.2%",
@@ -81,10 +81,10 @@ export default new Vuex.Store({
       },
       {
         id: 9,
-        strength: 15,
+        strength: 10,
         relSpeed: -0.2,
         top:"12px",
-        left:"70.4%",
+        left:"70.2%",
         imgSrc: GlassePic.Glasses6
       },
       {
@@ -107,7 +107,7 @@ export default new Vuex.Store({
       },
       {
         id: 12,
-        strength: 15,
+        strength: 10,
         relSpeed: -0.2,
         top:"12px",
         left:"25.6%",
@@ -123,7 +123,7 @@ export default new Vuex.Store({
       },
       {
         id: 14,
-        strength: 15,
+        strength: 10,
         relSpeed: -0.2,
         top:"12px",
         left:"36.8%",
@@ -139,7 +139,7 @@ export default new Vuex.Store({
       },
       {
         id: 16,
-        strength: 15,
+        strength: 10,
         relSpeed: -0.2,
         top:"12px",
         left:"48%",
@@ -155,7 +155,7 @@ export default new Vuex.Store({
       },
       {
         id: 18,
-        strength: 15,
+        strength: 10,
         relSpeed: -0.2,
         top:"12px",
         left:"59.2%",
@@ -171,10 +171,10 @@ export default new Vuex.Store({
       },
       {
         id: 20,
-        strength: 15,
+        strength: 10,
         relSpeed: -0.2,
         top:"12px",
-        left:"70.4%",
+        left:"70.2%",
         imgSrc: GlassePic.Glasses9
       },
       {

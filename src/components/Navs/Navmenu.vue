@@ -1,29 +1,15 @@
 <template>
-  <div class="navmenu">
+  <header class="navmenu">
 
-    <div class="navmenu__items">
+    <Navigation 
+      :className="'navmenu'"
+    />
 
-      <div class="navmenu__item">
-        <router-link to='/'>
-        Главная</router-link>
-      </div>
-
-      <div class="navmenu__item">
-        <router-link to='/glasses'>
-        Очки</router-link>
-      </div>
-
-      <div class="navmenu__item">
-        <router-link to="/services">
-        Услуги</router-link>
-      </div>
-
-    </div>
     
     <div class="navmenu__contacts">
       <div class="navmenu__inst-icon_wrapper">
       <a target="_blank" href="https://www.instagram.com/optika_oko_95/?hl=ru" class="navmenu__inst-icon">
-        <img src="../assets/img/home/inst.svg" alt="">
+        <img src="../../assets/img/home/inst.svg" alt="">
       </a>
       </div>
       <a href="tel:+79298897070" class="navmenu__phone-number">
@@ -32,13 +18,22 @@
     </div>
     
 
-  </div>
+  </header>
 </template>
+
+<script>
+import Navigation from './Navigation.vue'
+export default {
+  components:{
+    Navigation
+  },
+}
+</script>
 
 <style lang="sass">
 
   .navmenu
-    padding: 35px 40px
+    padding: 25px 40px
     position: sticky
     top: 0
     left: 0
