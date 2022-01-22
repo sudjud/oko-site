@@ -47,7 +47,6 @@
     font-weight: 300
     line-height: 1.55
     padding-top: 20px
-    width: 50%
   &__questions
     padding-top: 30px
     &:last-child

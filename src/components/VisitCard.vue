@@ -1,7 +1,7 @@
 <template>
   <div class="visit-card_wrapper">
-  <div class="visit-card">
-    <div class="visit-card__left">
+  <div class="col-12 visit-card">
+    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 visit-card__left">
       <h1>Контакты</h1>
       <div class="visit-card__adress">
         <p>Грозный, проспект Путина 16</p>
@@ -14,8 +14,8 @@
         <p>Здесь будет почта.</p>
       </div>
     </div>
-    <div class="visit-card__right">
-      <div id="map" class="visit-card__map basemap">
+    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 visit-card__right">
+      <div id="map" class=" visit-card__map basemap">
         
       </div>
     </div>
@@ -56,6 +56,7 @@ export default {
 .visit-card
   display: flex
   justify-content: space-between
+  flex-wrap: wrap
   padding: 40px 70px 80px 70px
   border: 3px solid $primary-pink
   display: flex
@@ -78,8 +79,38 @@ export default {
   &__right
     display: flex
     align-items: flex-end
-    width: 50%
     transform: rotate(3deg)
-    a
-      color: $primary-pink
+  a
+    color: $primary-pink
+
+@media screen and (max-width: 767px)
+  .visit-card
+    border: none
+    padding: 0
+    &_wrapper
+      background-color: #FFF
+    &__left
+      float: left
+    &__right
+      position: relative
+      top: -140px
+      height: 300px
+      width: 400px
+      left: 200px
+  .basemap
+
+@media screen and (max-width: 650px)
+  .visit-card
+    padding: 0 2vw 0 2vw
+    transform: none
+    &__left
+      transform: none
+    &__right
+      position: static
+      display: block
+      margin: 0 auto
+      width: 86vw
+      transform: none
+      height: 400px
+
 </style>

@@ -1,27 +1,31 @@
 <template>
-  <div class="info">
-    <div class="container">
-      <div class="info__wrapper">
-        <div class="col-xxl-6 block__wrapper block__wrapper_a">
-          <div class="info__block">
-            <div class="info__title">Как заказать очки или линзы?</div>
-            <div class="info__text">
-              <p>Сначала нужно сделать <span class="blue-text">вот этот</span> шаг</p>
-              <p>А за ним нужно сделать уже <span class="blue-text">второй шаг</span></p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            </div>
-          </div>
+  <div class="container info">
+    <div class="info__blocks">
+      <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-7 col-sm-9 col-11 info__block info__block_1">
+        <div class="info__title">
+          КАК СДЕЛАТЬ ЗАКАЗ?
         </div>
-        <div class="col-xxl-6 block__wrapper block__wrapper_b">
-          <div class="info__block">
-            <div class="info__title">Когда можно забрать?</div>
-            <div class="info__text">
-              <p>Сначала нужно сделать вот этот шаг</p>
-              <p>А за ним нужно сделать уже <span class="blue-text">второй шаг</span></p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
+        <div class="info__text">
+          <p>
+          Заказы принимаются <span>в любое время</span>, по телефону или в самой оптике.
+          </p>
+          <p>Время ожидания от <span>получаса до 2х недель</span>, в зависимости от сложности рецепта</p>
+          <p>По прибытии заказанных линз, наши мастера за 20 минут изготовят для вас очки. Вам остается лишь надеть очки и оценить их качество.</p>
         </div>
+        <router-link to="/" class="info__more">Подробнее</router-link>
+      </div>
+      <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-7 col-sm-9 col-11 info__block info__block_2">
+        <div class="info__title">
+          Купить сразу
+        </div>
+        <div class="info__text">
+        <p>
+          Вам не обязательно придется ждать. Скорее всего, <span>в оптике</span> уже есть то, что вам нужно.
+        </p>
+        <p>Если нет, то мы доставим все максимально быстро.</p>
+        <p>В наличии огромный ассортимент оправ, линз, солнцезащитных очков, контактных линз, аксессуаров, и всего остального.</p>
+        </div>
+        <router-link to="/" class="info__more" href="">Подробнее</router-link>
       </div>
     </div>
   </div>
@@ -30,39 +34,103 @@
 <style lang="sass">
 
 .info
-  display: flex
-  &__block
-    transform: rotate(4deg)
-    padding: 50px
-    a
-      position: relative
-      left: 400px
-      top: 50px
-      border: 3px solid $primary-blue
-  &__wrapper
+  &__blocks
     display: flex
     flex-direction: row
-    justify-content: space-between
+    flex-wrap: wrap
+    justify-content: space-around
+    text-align: justify
+  &__block
+    padding: 2rem 3rem 0 3rem
+    transform: rotate(-3deg)
+    border-radius: 11px
+    div
+      transform: rotate(3deg)
+    p
+      font-size: $small-regular
+      font-weight: 300
+    span
+      color: $primary-pink
+    &_1
+      border: 3px solid $primary-blue
+    &_2
+      border: 3px solid $primary-pink
   &__title
-    font-size: $big-fsz
+    font-size: $small-header
     color: $primary-pink
+    text-align: left
+    height: 2.5em
     text-transform: uppercase
-    line-height: 1.55
-    margin-bottom: 15px
-.blue-text
-  color: $primary-pink
-  font-weight: 400
+  &__text
+    height: 17em
+  &__more
+    text-transform: uppercase
+    transform: rotate(0deg)
+    float: right
+    border: 3px solid $primary-blue
+    padding: 10px
+    position: relative
+    left: calc(3rem + 3px)
+    top: 3px
+    border-radius: 11px 0px
+    color: $primary-pink
+    &:hover
+      background-color: $primary-pink
+      color: white
+    
+@media screen and (max-width: 1024px)
+  .info
+    &__block
+      padding-left: 1.5rem
+    &__text
+      height: 20em
 
-.block__wrapper
-  border-radius: 15px
-  transform: rotate(-4deg)
-  width: 45%
-  &_a
-    border-top: 3px solid $primary-blue
-    border-bottom: 3px solid $primary-blue
-  &_b
-    border-top: 3px solid $primary-pink
-    border-bottom: 3px solid $primary-pink
+@media screen and (max-width: 991px)
+  .info
+    &__block
+      margin-bottom: 40px
+    &__text
+      height: 16.5em
+
+@media screen and (max-width: 768px)
+  .info
+    &__block
+      padding: 2rem 1rem 0 1rem
+    &__text
+      height: 16em
+      p
+        font-size: 18px
+    &__more
+      left: calc(1rem + 3px)
+
+@media screen and (max-width: 520px)
+  .info
+    &__block
+      padding: 1rem 1rem 0 1rem
+    &__title
+      font-size: 20px
+      height: 2em
+    &__text
+      p
+        font-size: 15px
+
+@media screen and (max-width: 430px)
+  .info
+    &__block
+      padding: 1rem 0.5rem 0 0.5rem
+      transform: rotate(-2deg)
+      div
+        transform: rotate(2deg)
+    &__title
+      font-size: 18px
+      height: auto
+      margin-bottom: 5px
+    &__text
+      height: 15em
+      p
+        font-size: 15px
+    &__more
+      left: calc(0.5rem + 3px)
 
 </style>
 

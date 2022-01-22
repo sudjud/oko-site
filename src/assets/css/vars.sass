@@ -12,15 +12,17 @@ $regular-fsz: calc(1.175rem + 0.1vw)
 
 $big-regular: calc(1.275rem + 0.2vw)
 
-$small-regular: calc(1.275rem + 0.02vw)
+$small-regular: calc(1.1rem + 0.01vw)
 
 $big-fsz: calc(1.375rem + 0.8vw)
+
+$small-header: calc(1.300rem + 0.5vw)
 
 $header: calc(1.375rem + 1.5vw)
 
 $big-header: calc(1.375rem + 1.8vw)
 
-$small: calc(0.5rem + 0.5vw)
+$small: calc(1.055rem + 0.01vw)
 
 .prim-blue
   color: $primary-blue
@@ -80,3 +82,11 @@ a
 
 .bold
   font-weight: 600
+
+@media screen and (max-width: 768px)
+  .container
+    max-width: calc(100% - 30px)
+
+@media screen and (max-width: 425px)
+  .container
+    max-width: calc(100% - 2px)

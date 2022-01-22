@@ -1,5 +1,5 @@
 <template>
-  <div v-rellax="{speed: data.relSpeed}">
+  <div class="container" v-rellax="{speed: data.relSpeed}">
     <kinesis-element
       tag="img"
       :src="data.imgSrc"
@@ -23,8 +23,23 @@ export default {
 
 <style lang="sass">
 
-  .glasses-icon
-    position: absolute
-    width: 50px
+.glasses-icon
+  position: absolute
+  width: 50px
 
+@media screen and (max-width: 1024px)
+  .glasses-icon
+    width: 45px
+
+@media screen and (max-width: 768px)
+  .glasses-icon
+    width: 40px
+
+@media screen and (max-width: 576px)
+  .glasses-icon
+    width: 33px
+
+@media screen and (max-width: 425px)
+  .glasses-icon
+    width: 27px
 </style>

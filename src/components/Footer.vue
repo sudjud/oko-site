@@ -65,7 +65,7 @@ export default {
   padding-bottom: 70px
   width: 100%
   &__logo
-    width: 10vmax
+    width: 12vmax
   &__c
     align-self: center
   &__title
@@ -75,6 +75,8 @@ export default {
     color: #adadad
   &__item
     padding-top: 10px
+  &__block_wrapper
+    min-width: 170px
 
 .footer__block_wrapper1
   display: grid
@@ -82,5 +84,14 @@ export default {
   grid-template-rows: 1fr 1fr
   gap: 0px 0px
   grid-template-areas: ".""."
+  justify-self: center
+
+@media screen and (max-width: 767px)
+  .footer
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    gap: 0px 0px
+    grid-template-areas: ". ."". ."
+    justify-items: end
 
 </style>

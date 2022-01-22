@@ -19,7 +19,7 @@
           :data="item"
           :class="{ hidden: contains(hiddenArr, idx) }"
         />
-        <div class="home__desc_text_wrap">
+        <div class="container">
           <div class="home__desc_text rellax home__desc_text-a">
             Око&nbsp;&mdash; это салон оптики, где мы&nbsp;продаем очки, линзы
             и&nbsp;аксессуары к&nbsp;ним. Мы&nbsp;также изготовим для вас рецепт
@@ -38,7 +38,6 @@
           :class="{ hidden: contains(hiddenArr, idx) }"
         />
       </div>
-      <div class="interblock"></div>
     </kinesis-container>
     <div class="interblock"></div>
     <CallMe />
@@ -53,7 +52,7 @@
     <div class="follow-inst">
       <div class="container">
         <h1 class="follow-inst__title">
-          Подписывайтесь на <a target="_blank" href="https://www.instagram.com/optika_oko_95/?hl=ru">@optika_oko_95</a> в инстаграм
+          Подписывайтесь на&nbsp;<a target="_blank" href="https://www.instagram.com/optika_oko_95/?hl=ru">@optika_oko_95</a> в&nbsp;инстаграм
         </h1>
         <div class="follow-inst__posts">
           <div class="follow-inst__post">
@@ -105,7 +104,7 @@ export default {
       paraData1: this.$store.getters.paraData1,
       paraData2: this.$store.getters.paraData2,
       width: window.innerWidth,
-      hiddenArr: [1, 2, 4, 5, 7, 8, 10],
+      hiddenArr: [0,10],
     };
   },
   methods: {
@@ -164,26 +163,22 @@ export default {
         padding-top: 120px
       &-b
         padding-bottom: 80px
-      &_wrap
-        max-width: calc(100% - 80px)
-        margin: 0 auto
-        width: 1140px
 
-  @media (max-width: 1200px)
+  @media (max-width: 1112px)
     .hidden
       display: none
 
 
 .follow-inst
   &__title
-    width: 70%
+    width: 80%
     padding-bottom: 50px
     a:hover
       color: $primary-blue
   &__posts
     display: grid
     grid-template-columns: repeat(4, 1fr) 
-    grid-column-gap: 10px
+    grid-column-gap: 5px
     grid-row-gap: 5px
 
 @media screen and(max-width: 992px)
@@ -202,4 +197,12 @@ export default {
       div
         margin: 0 auto
 
+@media screen and (max-width: 576px)
+  .home__desc_text
+    font-size: 23px
+    text-align: center
+
+@media screen and (max-width: 425px)
+  .follow-inst__posts
+    grid-template-columns: repeat(2, 1fr)
 </style>

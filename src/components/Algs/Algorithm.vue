@@ -4,12 +4,12 @@
       {{ data.id }}
     </div>
     <div class="container algorithm__container">
-      <div class="col-2">
+      <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-3 col-4">
         <div class="algorithm__img">
           <img :src="data.imgSrc" alt="">
         </div>
       </div>
-      <div class="col-8">
+      <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-12">
         <div class="algorithm__title">
           {{ data.title }}     
         </div>
@@ -45,7 +45,6 @@ export default {
   div
     margin: auto auto
   &__img
-    width: 200px
     margin: 0 auto
   &__title
     font-size: $big-regular
@@ -59,6 +58,10 @@ export default {
     padding-top: 10px
   &__container
     display: flex
-  
+    flex-wrap: wrap
+    padding: 10px 0
+
+  @media screen and (max-width: 991px)
+    text-align: center
 
 </style>
