@@ -9,27 +9,41 @@
           <p>
           Заказы принимаются <span>в любое время</span>, по телефону или в самой оптике.
           </p>
-          <p>Время ожидания от <span>получаса до 2х недель</span>, в зависимости от сложности рецепта</p>
+          <p ref="algs">Время ожидания от <span>получаса до 2х недель</span>, в зависимости от сложности рецепта</p>
           <p>По прибытии заказанных линз, наши мастера за 20 минут изготовят для вас очки. Вам остается лишь надеть очки и оценить их качество.</p>
         </div>
-        <router-link to="/" class="info__more">Подробнее</router-link>
+        <router-link :to="{path: '/glasses', hash: 'alg'}" class="info__more">Подробнее</router-link>
       </div>
       <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-7 col-sm-9 col-11 info__block info__block_2">
         <div class="info__title">
-          Купить сразу
+          Солнцезащитные очки
         </div>
         <div class="info__text">
         <p>
-          Вам не обязательно придется ждать. Скорее всего, <span>в оптике</span> уже есть то, что вам нужно.
+          В нашей оптике вы найдете солнцезащитные очки от лучших мировых производителей.
         </p>
-        <p>Если нет, то мы доставим все максимально быстро.</p>
-        <p>В наличии огромный ассортимент оправ, линз, солнцезащитных очков, контактных линз, аксессуаров, и всего остального.</p>
+        <p>Новейшие коллекции Ray Ban, Armani, CARRERA, Porsche design, Maybach, ZILLI, Boss, Jimmy choo и многие другие выставляются в салоне и постоянно обновляются. Так же мы можем заказать любую понравившуюся вам модел по вашему желанию.</p>
         </div>
-        <router-link to="/" class="info__more" href="">Подробнее</router-link>
+        <router-link to="/" class="info__more">Подробнее</router-link>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    goto(refName) {
+    	var element = this.$refs[refName];
+      console.log(element);
+      var top = element.offsetTop;
+      console.log(top);
+      
+      window.scrollTo(0, 300);
+    }
+  }
+}
+</script>
 
 <style lang="sass">
 
@@ -42,10 +56,8 @@
     text-align: justify
   &__block
     padding: 2rem 3rem 0 3rem
-    transform: rotate(-3deg)
     border-radius: 11px
     div
-      transform: rotate(3deg)
     p
       font-size: $small-regular
       font-weight: 300
@@ -56,7 +68,7 @@
     &_2
       border: 3px solid $primary-pink
   &__title
-    font-size: $small-header
+    font-size: $big-regular
     color: $primary-pink
     text-align: left
     height: 2.5em

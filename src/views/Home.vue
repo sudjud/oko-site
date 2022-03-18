@@ -8,7 +8,7 @@
             <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-6 col-sm-9 col-12 main-desc">Премиальные очки и&nbsp;мед. услуги в&nbsp;Грозном</div>
           </div>
           <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 home__main_right">
-            <img class="col-xxl-12 col-xl-12 col-lg-12 col-md-8 col-sm-10 col-12" src="../assets/img/preview.jpeg" alt="" />
+            <img class="col-xxl-12 col-xl-12 col-lg-12 col-md-8 col-sm-10 col-12 home__main_right-img" src="../assets/img/preview.jpeg" alt="" />
           </div>
         </div>
       </div>
@@ -21,7 +21,7 @@
         />
         <div class="container">
           <div class="home__desc_text rellax home__desc_text-a">
-            Око&nbsp;&mdash; это салон оптики, где мы&nbsp;продаем очки, линзы
+            Око-куьзгнаш&nbsp;&mdash; это салон оптики, где мы&nbsp;продаем очки, линзы
             и&nbsp;аксессуары к&nbsp;ним. Мы&nbsp;также изготовим для вас рецепт
             любой сложности, а&nbsp;наши мастера в&nbsp;тот&nbsp;же день починят
             ваши очки и&nbsp;любые принадлежности к&nbsp;ним.
@@ -40,7 +40,11 @@
       </div>
     </kinesis-container>
     <div class="interblock"></div>
-    <CallMe />
+    <div class="container"><h1 v-animate-onscroll="'animated fadeIn'">Мы сотрудничаем с:</h1></div>
+    <div class="interhalf"></div>
+    <Partnership1 />
+    <div class="interblock"></div>
+    <CallMe v-animate-onscroll="'animated zoomInUp'"/>
     <div class="interblock"></div>
     <div class="blue-bg">
       <div class="interblock"></div>
@@ -51,7 +55,7 @@
     <div class="interblock"></div>
     <div class="follow-inst">
       <div class="container">
-        <h1 class="follow-inst__title">
+        <h1 v-animate-onscroll="'animated fadeIn'" class="follow-inst__title">
           Подписывайтесь на&nbsp;<a target="_blank" href="https://www.instagram.com/optika_oko_95/?hl=ru">@optika_oko_95</a> в&nbsp;инстаграм
         </h1>
         <div class="follow-inst__posts">
@@ -77,7 +81,7 @@
             <img src="../assets/img/home/inst-posts/g.jpg" alt="">
           </div>
           <div class="follow-inst__post">
-            <img src="../assets/img/home/inst-posts/h.jpg" alt="">
+            <img id="anchor" src="../assets/img/home/inst-posts/h.jpg" alt="">
           </div>
         </div>
       </div>
@@ -97,6 +101,8 @@ import Info from '../components/Info.vue'
 import Faq from '../components/Faq.vue'
 import VisitCard from '../components/VisitCard.vue'
 import Footer from '../components/Footer.vue'
+import Partnership1 from '../components/Partnership1.vue'
+import {UAnimateContainer, UAnimate} from 'vue-wow'
 
 export default {
   data() {
@@ -129,7 +135,10 @@ export default {
     Info,
     Faq,
     VisitCard,
-    Footer
+    Footer,
+    Partnership1,
+    UAnimateContainer,
+    UAnimate
   },
 };
 </script>
@@ -151,7 +160,10 @@ export default {
       padding-right: 70px
 
     &_right
-      transform: rotate(2deg)
+      transform: rotate(1deg)
+      background-color: $primary-pink
+      &-img 
+        transform: rotate(4deg)
 
   &__desc
     &_text

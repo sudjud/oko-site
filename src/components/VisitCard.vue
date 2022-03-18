@@ -2,7 +2,7 @@
   <div class="visit-card_wrapper">
   <div class="col-12 visit-card">
     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 visit-card__left">
-      <h1>Контакты</h1>
+      <h1 v-animate-onscroll="'animated fadeIn'">Контакты</h1>
       <div class="visit-card__adress">
         <p>Грозный, проспект Путина 16</p>
         <p>В будни: 09:00-19:00<br>В выходные: 10:00-18:00</p>
@@ -15,34 +15,34 @@
       </div>
     </div>
     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 visit-card__right">
-      <div id="map" class=" visit-card__map basemap">
+      <!-- <div id="map" class=" visit-card__map basemap">
         
-      </div>
+      </div> -->
     </div>
   </div>
   </div>
 </template>
 
 <script>
-import mapboxgl from "/node_modules/mapbox-gl/dist/mapbox-gl";
+// import mapboxgl from "/node_modules/mapbox-gl/dist/mapbox-gl";
 
 export default {
 
-  name: "BaseMap",
+  // name: "BaseMap",
   data() {
     return {
-      accessToken: 'pk.eyJ1Ijoic3VkanVkIiwiYSI6ImNrd20ycm5wMjI3dTkycG1qdmcyb3B1NGUifQ.Sff6_jEXs6eZSUK5GXm94A',
+      // accessToken: 'pk.eyJ1Ijoic3VkanVkIiwiYSI6ImNrd20ycm5wMjI3dTkycG1qdmcyb3B1NGUifQ.Sff6_jEXs6eZSUK5GXm94A',
     };
   },
-  mounted() {
-    mapboxgl.accessToken = this.accessToken;
-    new mapboxgl.Map({
-      container: "map",
-      style: "mapbox://styles/mapbox/streets-v11",
-      center: [45.685018, 43.321053],
-      zoom: 16,
-    });
-  },
+  // mounted() {
+  //   mapboxgl.accessToken = this.accessToken;
+  //   new mapboxgl.Map({
+  //     container: "map",
+  //     style: "mapbox://styles/mapbox/streets-v11",
+  //     center: [45.685018, 43.321053],
+  //     zoom: 16,
+  //   });
+  // },
   
 }
 </script>

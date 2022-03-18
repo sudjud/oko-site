@@ -1,5 +1,5 @@
 <template>
-  <div class="algorithm">
+  <div v-animate-onscroll="'animated fadeIn'" class="algorithm">
     <div class="algorithm__number">
       {{ data.id }}
     </div>

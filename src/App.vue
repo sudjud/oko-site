@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <div style="position: absolute;">{{ width }}
     {{ height }}</div> 
     <Navmenu />
@@ -12,10 +12,6 @@
     </div>
   </div>
 </template>
-
-<style lang="sass">
-
-</style>
 
 <script>;
 import Navmenu from './components/Navs/Navmenu.vue'
@@ -51,7 +47,8 @@ export default {
 
 <style lang="sass">
 
-
+  html
+    height: 100%
   
   .hamburger
     display: none

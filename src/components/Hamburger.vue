@@ -2,7 +2,7 @@
   <div class="hamburger">
     <push noOverlay>
       <Navigation 
-        :className="'navmenu'"
+        :className="'hamburger'"
       />
     </push>
   </div>
@@ -24,10 +24,21 @@ export default {
 <style lang="sass">
 
   .bm-menu
-    background-color: #017DFA
+    background-color: $primary-pink
+    padding-top: 30px
 
   .bm-item-list
     color: white
+
+  .hamburger__items
+    display: flex
+    flex-direction: column
+    color: white
+  .hamburger__item
+    padding-top: 10px
+    a
+      color: white
+    
 
 
 </style>

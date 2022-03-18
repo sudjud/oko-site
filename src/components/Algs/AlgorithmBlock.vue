@@ -1,5 +1,5 @@
 <template>
-  <div class="algorithm-block">
+  <div class="algorithm-block container">
     <Algorithm 
       v-for="item in algorithmData"
       :key="item.id"
@@ -7,6 +7,7 @@
     />
   </div>
 </template>
+
 
 <script>
 import Algorithm from './Algorithm.vue'
