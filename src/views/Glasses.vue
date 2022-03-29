@@ -13,15 +13,17 @@
             </div>
           </div>
         </div>
+        <a name="alg"/>
         <div class="interblock"></div>
+        
       </div>
       <div class="container">
         <div class="glasses__algorithm">
-          <h1 id="alg" v-animate-onscroll="'animated fadeIn'" class="prim-blue glasses__algorithm_title">Как заказать очки?</h1>
+          <h1 v-animate-onscroll="'animated fadeIn'" class="prim-blue glasses__algorithm_title">Как заказать очки?</h1>
           <p class="glasses__algorithm_desc col-12">Все очень просто. Мы&nbsp;можем выписать вам рецепт, и&nbsp;если нет нужных линз, мы&nbsp;их&nbsp;закажем и&nbsp;они будут у&nbsp;вас максимум через две недели</p>
         </div>
       </div>
-      <AlgorithmBlock />
+      <AlgorithmBlock/>
 
       <div class="interblock"></div>
     </div>

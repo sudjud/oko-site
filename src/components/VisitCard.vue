@@ -15,43 +15,21 @@
       </div>
     </div>
     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 visit-card__right">
-      <!-- <div id="map" class=" visit-card__map basemap">
-        
-      </div> -->
+      <div id="map"><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d725.6686335550132!2d45.684440729360944!3d43.32107220000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4051d381cefaf883%3A0x41e41d97f4b602bb!2z0JTQtdGC0YHQutCw0Y8g0J7Qv9GC0LjQutCwINCR0JXQoNCY0JnQnSDQmtCj0KzQl9CT0JDQndCQ0Kg!5e0!3m2!1sru!2sru!4v1648541617424!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     </div>
   </div>
   </div>
 </template>
 
-<script>
-// import mapboxgl from "/node_modules/mapbox-gl/dist/mapbox-gl";
-
-export default {
-
-  // name: "BaseMap",
-  data() {
-    return {
-      // accessToken: 'pk.eyJ1Ijoic3VkanVkIiwiYSI6ImNrd20ycm5wMjI3dTkycG1qdmcyb3B1NGUifQ.Sff6_jEXs6eZSUK5GXm94A',
-    };
-  },
-  // mounted() {
-  //   mapboxgl.accessToken = this.accessToken;
-  //   new mapboxgl.Map({
-  //     container: "map",
-  //     style: "mapbox://styles/mapbox/streets-v11",
-  //     center: [45.685018, 43.321053],
-  //     zoom: 16,
-  //   });
-  // },
-  
-}
-</script>
 
 <style lang="sass">
 
-.basemap
+#map
   width: 100%
-  height: 80%
+  height: 100%
+.map
+  width: 100%
+  height: 100%
 
 .visit-card
   display: flex
@@ -77,8 +55,6 @@ export default {
     color: $primary-pink
     font-weight: 400
   &__right
-    display: flex
-    align-items: flex-end
     transform: rotate(3deg)
   a
     color: $primary-pink
@@ -97,7 +73,6 @@ export default {
       height: 300px
       width: 400px
       left: 200px
-  .basemap
 
 @media screen and (max-width: 650px)
   .visit-card

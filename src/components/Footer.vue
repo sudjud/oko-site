@@ -15,7 +15,7 @@
     </div>
 
 
-    <div class="footer__block_wrapper footer__block_wrapper3">
+    <!-- <div class="footer__block_wrapper footer__block_wrapper3">
       <div class="footer__title">
         О работе
       </div>
@@ -25,14 +25,16 @@
         <div class="footer__item"><router-link to="/">Сотрудничество</router-link></div>
         <div class="footer__item"><router-link to="/">Политика возврата<br> и отмены заказа</router-link></div>
       </div>
-    </div>
+    </div> -->
 
 
     <div class="footer__block_wrapper footer__block_wrapper4">
       <div class="footer__title">Связь с нами</div>
       <div class="footer__items">
+        <div class="footer__item"><a href="https://t.me/opticaoko95" class="footer_item">Телеграм</a></div>
         <div class="footer__item"><a href="https://www.instagram.com/optika_oko_95/?hl=ru" class="footer_item">Инстаграм</a></div>
         <div class="footer__item"><a href="tel:+79298897070" class="footer__phone-number">+7 929 889 70 70</a></div>
+
       </div>
     </div>
     

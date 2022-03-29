@@ -52,6 +52,7 @@ export default {
   
   .hamburger
     display: none
+    
 
   @media (max-width: 980px)
     .navmenu

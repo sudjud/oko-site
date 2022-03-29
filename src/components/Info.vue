@@ -12,7 +12,7 @@
           <p ref="algs">Время ожидания от <span>получаса до 2х недель</span>, в зависимости от сложности рецепта</p>
           <p>По прибытии заказанных линз, наши мастера за 20 минут изготовят для вас очки. Вам остается лишь надеть очки и оценить их качество.</p>
         </div>
-        <router-link :to="{path: '/glasses', hash: 'alg'}" class="info__more">Подробнее</router-link>
+        <a href="/glasses#alg" class="info__more">Подробнее</a>
       </div>
       <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-7 col-sm-9 col-11 info__block info__block_2">
         <div class="info__title">
@@ -24,7 +24,6 @@
         </p>
         <p>Новейшие коллекции Ray Ban, Armani, CARRERA, Porsche design, Maybach, ZILLI, Boss, Jimmy choo и многие другие выставляются в салоне и постоянно обновляются. Так же мы можем заказать любую понравившуюся вам модел по вашему желанию.</p>
         </div>
-        <router-link to="/" class="info__more">Подробнее</router-link>
       </div>
     </div>
   </div>
