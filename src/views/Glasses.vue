@@ -46,7 +46,6 @@
       <div class="interhalf"></div>
       <LensesBrands />
       <div class="interhalf"></div>
-      <p class="col-9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ex aliquid ea beatae atque vitae. Dolorem est mollitia recusandae repellat!</p>
       <div class="interhalf"></div>
       <Lenses />
       <div class="interblock"></div>
@@ -59,7 +58,7 @@
       <p><span style="color: #009EDE">Acuvue Moist</span> - контактные линзы ежедневной замены, которые могут обеспечить комфорт и предотвратить раздражение глаз.</p>
       <p><span style="color: #93C548">Optima</span> - эти контактные линзы совсем не дорогие, но в то же время обеспечивают высокое качество зрения. Они практически не ощущаются на глазах благодаря ультратонким краям.</p>
       <p><span style="color: #C83B26">Proclear</span> - они сделаны с применением технологии PC Technology™, благодаря которой вода притягивается к вашим линзам, помогая им оставаться чистыми и комфортными в течение всего дня.</p>
-      <p>Ну и наконец, <span style="color:#F3E500">ц</span><span style="color:#FAC70C">в</span><span style="color:#F28E1C">е</span><span style="color:#E96220">т</span><span style="color:#E32322">н</span><span style="color:#E32322">ы</span><span style="color:#6D398B">е</span> <span style="color:#454E99">л</span><span style="color:#2A71AF">и</span><span style="color:#0696BB">н</span><span style="color:#008F5A">з</span><span style="color:#8DBB25">ы</span> - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, iste!</p>
+      <p>Ну и наконец, <span style="color:#F3E500">ц</span><span style="color:#FAC70C">в</span><span style="color:#F28E1C">е</span><span style="color:#E96220">т</span><span style="color:#E32322">н</span><span style="color:#E32322">ы</span><span style="color:#6D398B">е</span> <span style="color:#454E99">л</span><span style="color:#2A71AF">и</span><span style="color:#0696BB">н</span><span style="color:#008F5A">з</span><span style="color:#8DBB25">ы</span> для яркого образа!</p>
       <div class="interblock"></div>
       
     </div>

@@ -1,7 +1,7 @@
 <template>
   <div :class="`${className}__items`">
     <div :class="`${className}__item`">
-      <a href="/home">Главная</a>
+      <a href="/">Главная</a>
     </div>
 
     <div :class="`${className}__item`">
